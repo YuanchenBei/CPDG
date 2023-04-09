@@ -14,15 +14,20 @@ The preprocessing code of all the experimental datasets (Link prediction data: A
 
 The source data can be download as below links:
 
-Amazon: https://jmcauley.ucsd.edu/data/amazon
+- Amazon: https://jmcauley.ucsd.edu/data/amazon
 
-Gowalla: http://www.yongliu.org/datasets.html
+- Gowalla: http://www.yongliu.org/datasets.html
 
-Wikipedia: http://snap.stanford.edu/jodie/wikipedia.csv
+- Wikipedia: http://snap.stanford.edu/jodie/wikipedia.csv
 
-MOOC: http://snap.stanford.edu/jodie/mooc.csv
+- MOOC: http://snap.stanford.edu/jodie/mooc.csv
 
-Reddit: http://snap.stanford.edu/jodie/reddit.csv
+- Reddit: http://snap.stanford.edu/jodie/reddit.csv
+
+
+The preprocessed data example is as follow:
+
+![image](data_example.jpg)
 
 ------
 

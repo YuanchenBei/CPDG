@@ -7,6 +7,7 @@
 - torch==1.6.0
 - scikit-learn==0.23.1
 
+------
 
 ### Data Preprocessing
 The preprocessing code of all the experimental datasets (Link prediction data: Amazon, Gowalla, Meituan; Node classification data: Wikipedia, MOOC, Reddit) has been place in the **/process** folder.
@@ -23,6 +24,7 @@ MOOC: http://snap.stanford.edu/jodie/mooc.csv
 
 Reddit: http://snap.stanford.edu/jodie/reddit.csv
 
+------
 
 ### Running
 (i) Determine the data path after placing the preprocessed data.

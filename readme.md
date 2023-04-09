@@ -24,6 +24,8 @@ The source data can be download as below links:
 
 - Reddit: http://snap.stanford.edu/jodie/reddit.csv
 
+We have also provided the preprocessed data files in the Google Cloud Drive, you can obtain them by the following link:
+https://drive.google.com/drive/folders/12yhG061oZVG4RzMMuhsplFO2Xe74aKKG
 
 The preprocessed data example is as follow:
 

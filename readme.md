@@ -1,4 +1,4 @@
-# CPDG: 动态图预训练
+# CPDG: A contrastive pre-training method for dynamic graph neural networks
 
 
 ### Dependencies
@@ -12,10 +12,15 @@
 The preprocessing code of all the experimental datasets (Link prediction data: Amazon, Gowalla, Meituan; Node classification data: Wikipedia, MOOC, Reddit) has been place in the **/process** folder.
 
 The source data can be download as below links:
-Amazon: https://jmcauley.ucsd.edu/data/amazon/
+
+Amazon: https://jmcauley.ucsd.edu/data/amazon
+
 Gowalla: http://www.yongliu.org/datasets.html
+
 Wikipedia: http://snap.stanford.edu/jodie/wikipedia.csv
+
 MOOC: http://snap.stanford.edu/jodie/mooc.csv
+
 Reddit: http://snap.stanford.edu/jodie/reddit.csv
 
 

@@ -28,6 +28,7 @@ Reddit: http://snap.stanford.edu/jodie/reddit.csv
 (i) Determine the data path after placing the preprocessed data.
 
 (ii) Model pre-training through pretrain_cl.py [the example is as follows, find the location of the data through the corresponding path parameter]
+
 `
 python3 pretrain_cl.py 
 --use_memory
@@ -51,6 +52,7 @@ python3 pretrain_cl.py
 `
 
 (iii) Perform downstream fine-tuning tasks through downstream.py (link prediction) or downstream_nc.py (node classification) [the example is as follows, find the location of the data through the corresponding path parameter]
+
 `
 python3 downstream.py
 --use_memory

@@ -1,4 +1,4 @@
-# CPDG: A contrastive pre-training method for dynamic graph neural networks
+# CPDG: A Contrastive Pre-Training Method for Dynamic Graph Neural Networks
 
 
 ### Dependencies
@@ -12,7 +12,7 @@
 ### Data Preprocessing
 The preprocessing code of all the experimental datasets (Link prediction data: Amazon, Gowalla, Meituan; Node classification data: Wikipedia, MOOC, Reddit) has been place in the **/process** folder.
 
-The source data can be download as below links:
+The source data can be downloaded in below links:
 
 - Amazon: https://jmcauley.ucsd.edu/data/amazon
 
@@ -27,7 +27,7 @@ The source data can be download as below links:
 We have also provided the preprocessed data files in the Google Cloud Drive, you can obtain them by the following link:
 https://drive.google.com/drive/folders/12yhG061oZVG4RzMMuhsplFO2Xe74aKKG
 
-The preprocessed data example is as follow:
+The preprocessed data example is as follows:
 
 ![image](data_example.jpg)
 
@@ -51,13 +51,13 @@ python3 pretrain_cl.py
 --seq_len 10
 --data_type amazon
 --task_type time_trans
---data_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---model_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---log_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---check_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---emb_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---result_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---seq_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
+--data_path [your path to access the dataset]
+--model_path [your path to access the model]
+--log_path [your path to save the log]
+--check_path [your path to save the checkpoint]
+--emb_path [your path to save the embedding]
+--result_path [your path to save the results]
+--seq_path [your path to save the EIE sequence]
 `
 
 (iii) Perform downstream fine-tuning tasks through downstream.py (link prediction) or downstream_nc.py (node classification) [the example is as follows, find the location of the data through the corresponding path parameter]
@@ -75,13 +75,13 @@ python3 downstream.py
 --task_type time_trans
 --gpu 0
 --n_runs 5
---pretrained_model_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run/saved_models/tgn-amazon_beauty_pretrain_t-lp-amazon_beauty_pretrain.pth
---pretrained_emb_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run/saved_embed/tgn-amazon_beauty_pretrain_t-lp-amazon_beauty_pretrain-emb.pth
---pretrained_seq_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run/saved_seq/tgn-amazon_beauty_pretrain_t-lp-amazon_beauty_pretrain-seq.pth
---data_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---model_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---log_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---check_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---emb_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run
---result_path /mnt/dolphinfs/hdd_pool/docker/user/hadoop-aipnlp/ycbei/research/run/model-run 
+--pretrained_model_path [your path to access the pre-trained model parameter]
+--pretrained_emb_path [your path to access the pre-trained node embedding]
+--pretrained_seq_path [your path to access the EIE sequence]
+--data_path [your path to access the dataset]
+--model_path [your path to access the model]
+--log_path [your path to save the log]
+--check_path [your path to save the checkpoint]
+--emb_path [your path to save the embedding]
+--result_path [your path to save the results]
 `

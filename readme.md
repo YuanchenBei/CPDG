@@ -1,5 +1,6 @@
 # CPDG: A Contrastive Pre-Training Method for Dynamic Graph Neural Networks
 
+This is the Pytorch-version code of CPDG (CPDG: A Contrastive Pre-Training Method for Dynamic Graph Neural Networks, ICDE2024).
 
 ### Dependencies
 - python >= 3.7
@@ -38,7 +39,7 @@ The preprocessed data example is as follows:
 
 (ii) Model pre-training through pretrain_cl.py [the example is as follows, find the location of the data through the corresponding path parameter]
 
-`
+```
 python3 pretrain_cl.py 
 --use_memory
 --prefix tgn-amazon_beauty_pretrain_t-ts-bs1024
@@ -58,11 +59,11 @@ python3 pretrain_cl.py
 --emb_path [your path to save the embedding]
 --result_path [your path to save the results]
 --seq_path [your path to save the EIE sequence]
-`
+```
 
 (iii) Perform downstream fine-tuning tasks through downstream.py (link prediction) or downstream_nc.py (node classification) [the example is as follows, find the location of the data through the corresponding path parameter]
 
-`
+```
 python3 downstream.py
 --use_memory
 --prefix tgn-amazon_beauty_downstream_t-lp-bs1024-lr0001
@@ -84,4 +85,14 @@ python3 downstream.py
 --check_path [your path to save the checkpoint]
 --emb_path [your path to save the embedding]
 --result_path [your path to save the results]
-`
+```
+
+### Citation
+```
+@article{bei2023cpdg,
+  title={CPDG: A Contrastive Pre-Training Method for Dynamic Graph Neural Networks},
+  author={Bei, Yuanchen and Xu, Hao and Zhou, Sheng and Chi, Huixuan and Zhang, Mengdi and Li, Zhao and Bu, Jiajun},
+  journal={arXiv preprint arXiv:2307.02813},
+  year={2023}
+}
+```
